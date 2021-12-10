@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>01_transform</title>
+
+    <style>
+        body {
+            margin-bottom: 300px;
+        }
+
+        div {
+            margin-left: 100px;
+        }
+
+        img {
+            width: 300px;
+            border: 1px solid #000;
+            transition: all 0.5s;
+        }
+
+
+        .div1 img:hover {
+            transform: translate(100px, 30px);
+            /* ()안의 수치는 x,y 값 */
+        }
+
+        .div2 img:hover {
+            transform: rotate(-45deg);
+            /*각도의 약자 deg*/
+        }
+
+        .div3 img:hover {
+            transform: scale(1.5);
+            /*1이 100% 임 1.5는 1.5배 */
+        }
+
+
+        .div4 img:hover {
+            transform: skew(30deg, 15deg);
+            /*첫번째는 왼쪽에서 오른쪽 아래 / 두번째는 오른쪽에서 왼쪽 아래*/
+        }
+
+        .div5 img:hover {
+            opacity: 0.4;
+            /* 70%의 투명도 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>translate</h1>
+    <!--이동-->
+    <div class="div1"><img src="images/cake.jpg" alt=""></div>
+
+    <h1>rotate</h1>
+    <!--회전-->
+    <div class="div2"><img src="images/cake.jpg" alt=""></div>
+
+    <h1>scale</h1>
+    <!--사이즈 변형-->
+    <div class="div3"><img src="images/cake.jpg" alt=""></div>
+
+    <h1>skew</h1>
+    <!--비틀어주는것-->
+    <div class="div4"><img src="images/cake.jpg" alt=""></div>
+
+    <h1>opacity</h1>
+    <!--투명도-->
+    <div class="div5"><img src="images/cake.jpg" alt=""></div>
+
+</body></html>
