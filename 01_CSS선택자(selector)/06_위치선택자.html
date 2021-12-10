@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>06_위치선택자</title>
+    <!--ul의 자식들은 li인데 li들끼리 형제요소임
+        같은 위치에 나열된 애들 기준으로 위치선택 첫번째는 first 마지막은 last
+        nth 몇번째 아이인지 중간에있는 애들선택할 때 쓰고 ()에 몇번째인지 숫자를 쓰면됨-->
+    <style>
+        ul {
+            background-color: darkslateblue;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            line-height: 40px;
+        }
+
+        li:first-child {
+            color: red
+        }
+
+        li:last-child {
+            color: magenta;
+            font-weight: bold;
+        }
+
+        li:nth-child(3) {
+            color: lightcoral;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+    </ul>
+
+
+
+
+
+</body></html>

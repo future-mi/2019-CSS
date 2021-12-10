@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>05_자식선택자</title>
+
+    <!--main이라는 클래스 안의 li를 선택
+   > 입을 벌리고있는 쪽에 속해있다 li 인데 sub에 속해있는 li
+   -->
+    <style>
+        .main li {
+            color: red;
+        }
+
+        .sub>li {
+            color: green
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="main">
+        <li>menu
+
+            <ul class="sub">
+                <li>sub</li>
+                <li>sub</li>
+                <li>sub</li>
+                <li>sub</li>
+
+            </ul>
+
+        </li>
+
+
+        <li>menu
+        </li>
+
+
+    </ul>
+
+
+
+
+</body></html>
