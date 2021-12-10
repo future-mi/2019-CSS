@@ -1,0 +1,172 @@
+@charset="UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main*/
+
+.clearfix {
+    overflow: hidden;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+body {
+    line-height: 30px;
+}
+
+/*****HEADER************************************************/
+header {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 80px;
+    /*
+    border: 1px solid #000;
+*/
+}
+
+header .logo {
+    width: 20%;
+    line-height: 80px;
+    color: brown;
+    font-weight: bold;
+    float: left;
+}
+
+header nav {
+    float: right;
+    width: 70%;
+
+}
+
+header nav ul li {
+    width: 12.5%;
+    float: left;
+    line-height: 80px;
+    /*자식도 float 부모도 float되서 뒤가 영향이 안감*/
+}
+
+/******SECTION************************************************/
+
+.main {
+    width: 90%;
+    height: 400px;
+    background-color: goldenrod;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.wrap {
+    width: 90%;
+    background-color: #eee;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.wrap h2 {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.wrap .con-wrap {
+    text-align: center;
+    padding: 14px;
+    overflow: hidden;
+}
+
+.wrap .con-wrap .con1 {
+    width: 20%;
+    height: 200px;
+    background-color: crimson;
+    float: left;
+}
+
+.wrap .con-wrap .con2 {
+    width: 56%;
+    height: 200px;
+    background-color: olivedrab;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.wrap .con-wrap .con3 {
+    width: 20%;
+    height: 200px;
+    background-color: orange;
+    float: left;
+}
+
+.banner {
+    /*
+    clear: both;
+*/
+    width: 90%;
+    height: 120px;
+    background-color: maroon;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/******FOOTER************************************************/
+
+footer {
+    width: 100%;
+    height: 140px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+}
+
+footer .footer-wrap {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 140px;
+}
+
+footer .footer-wrap .logo-bottom {
+    width: 20%;
+    float: left;
+    
+}
+footer .footer-wrap ul {
+    width: 50%;
+    float: right;
+}
+footer .footer-wrap ul li {
+    width: 15%;
+    display: inline-block;
+    text-align: right;
+}
+
+footer .footer-wrap ul li a {
+    color: #eee;
+}
+
+footer .footer-wrap ul li a:hover {
+    color: yellow;
+    font-weight: bold;
+}
+
+
+
+

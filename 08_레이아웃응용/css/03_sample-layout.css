@@ -1,0 +1,171 @@
+@charset="UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+body {
+    background-color: beige;
+    line-height: 50px;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    background-color: aquamarine;
+}
+
+.main {
+    width: 100%;
+    height: 230px;    
+    background-color: brown;
+    
+}
+
+section {
+    width: 90%;
+    background-color: darkred;
+    margin: 0 auto;
+}
+
+.wrap {}
+.wrap .con1{
+    width: 30%;
+    height: 280px;
+    background-color: forestgreen;
+    float: left;
+}
+.wrap .wrap-sub {
+    width: 15%;
+    float: left;
+}
+/* 밑에 con2-5사이에 float주는게 아니라 부모에게 float주기 */
+
+.wrap .wrap-sub .con2{
+    height: 70px;
+    background-color: lightgreen;
+}
+.wrap .wrap-sub .con3{
+    height: 70px;
+    background-color: lightcoral;
+}
+.wrap .wrap-sub .con4{
+    height: 70px;
+    background-color: lightblue;
+}
+.wrap .wrap-sub .con5{
+    height: 70px;
+    background-color: lightpink;
+}
+
+.wrap .con6 {
+    width: 55%;
+    height: 280px;
+    background-color: yellowgreen;
+    float: left;
+}
+
+.title {
+    height: 120px;
+    background-color: darkgoldenrod;
+}
+
+.wrap2 {}
+.wrap2 .left {
+    width: 60%;
+    float: left;
+}
+.wrap2 .left .con7{
+    width: 100%;
+    height: 150px;
+    background-color: darkkhaki;
+}
+.wrap2 .left .con8{
+    width: 50%;
+    height: 150px;
+    background-color: blueviolet;
+    float: left;
+}
+.wrap2 .left .con9{
+    width: 50%;
+    height: 150px;
+    background-color: gray;
+    float: left;
+}
+.wrap2 .left .con10{
+    width: 50%;
+    height: 150px;
+    background-color: chocolate;
+    float: left;
+}
+.wrap2 .left .con11{
+    width: 50%;
+    height: 150px;
+    background-color: mediumorchid;
+    float: left;
+}
+
+.wrap2 .right {
+    width: 40%;
+    float: right;
+}
+.wrap2 .right .con12{
+    height: 300px;
+    background-color: cadetblue;
+}
+.wrap2 .right .con13{
+    height: 150px;
+    background-color: crimson;
+}
+
+.partners {
+    height: 120px;
+    background-color: darkseagreen;
+}
+
+footer {
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,175 @@
+@charset="UTF-8";
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main */
+
+.clearfix {
+    overflow: hidden;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+body {
+    text-align: center;
+    line-height: 60px;
+}
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* float된 요소를 해제 */
+}
+
+header .logo {
+    width: 50%;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+header nav {
+    width: 600px;
+    margin: 0 auto;
+}
+
+header nav ul li {
+    width: 150px;
+    float: left;
+    /*  display: inline-block; - 이걸로 써도 float처리와 동일한 효과 */
+}
+
+header nav ul li a {
+    color: black;
+}
+
+header nav ul li:hover {
+    /* li에 호버하는 것과 a에 호버하는 것 > 범위가 달라짐 */
+    background-color: lightcoral;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: white;
+}
+
+
+section {
+    margin-bottom: 50px;
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+    background-color: burlywood;
+}
+
+.item-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.item-wrap .item01 {
+    width: 25%;
+    height: 250px;
+    background-color: firebrick;
+    float: left;
+}
+
+.item-wrap .item02 {
+    width: 25%;
+    height: 250px;
+    background-color: lightblue;
+    float: left;
+}
+
+
+.banner-wrap {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.banner-wrap .banner1 {
+    width: 50%;
+    height: 100px;
+    background-color: lightgreen;
+    float: left;
+}
+
+.banner-wrap .banner2 {
+    width: 50%;
+    height: 100px;
+    background-color: darkgoldenrod;
+    float: left;
+}
+
+
+footer {
+    width: 100%;
+    background-color: lightgray;
+    border-top: 1px solid #888;
+}
+
+footer .footer-wrap {
+    width: 90%;
+    height: 30px;
+/*    background-color: aquamarine;*/
+    margin: 0 auto;
+    font-size: 12px;
+    border-bottom: 0.5px solid #888;
+}
+
+footer .footer-wrap ul {
+    width: 60%;
+    float: left;
+}
+
+footer .footer-wrap ul li {
+    line-height: 30px;
+    float: left;
+    margin-right: 20px;
+}
+
+footer .footer-wrap ul li a {
+    color: darkviolet;
+}
+
+footer .footer-wrap div a {
+    width: 30%;
+    float: right;
+    line-height: 30px;
+    text-align: right;
+    color: blueviolet;
+}
+
+footer .copy {
+    width: 90%;
+    margin: 0 auto;
+    height: 100px;
+    line-height: 100px;
+    font-size: 14px;
+    text-align: left;
+}
+
