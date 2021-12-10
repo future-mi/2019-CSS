@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>04_z-index_layout1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: darksalmon;
+            font-size: 20px;
+            text-align: center;
+            position: fixed; /*fixed 나오면 Z-index가 나옴 */
+            z-index: 999;
+        }
+
+        section {
+            width: 100%;
+            background-color: seagreen;
+            padding-top: 100px;  /* padding으로만 주면 옆에 여백 생김 */
+        }
+
+        .slide {
+            height: 500px;
+            background-color: lightcoral;
+            position: relative;
+        }
+
+        .slide p {
+            font-size: 60px;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            margin-top: -40px; /* -값은 위로 +는 아래로 */
+            /* p태그가 시작되는 값이 위에서부터 50%부터 시작이기 때문에 p태그의 전체 높이의 절반을 높여주면 중간부터 시작 가능함 p태그가 43.156 X 80 이니까 높이가 80px의 절반인 40px을 마이너스 값으로 넣음 */
+
+        }
+
+        .slide p:first-child {
+            left: 20px;
+        }
+        .slide p:last-child {
+            right: 20px;
+        }
+        
+        .content {
+            width: 100%;
+            height: 980px;
+            background-color: crimson;
+        }
+        footer {
+            width: 100%;
+                height: 80px;
+            background-color: dodgerblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>Header 고정</header>
+    <section>
+        <article class="slide">
+            <p>&lt;</p>
+            <p>&gt;</p>
+        </article>
+
+        <article class="content"></article>
+    </section>
+    <footer></footer>
+
+
+</body></html>

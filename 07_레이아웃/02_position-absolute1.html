@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>02_position-absolute1</title>
+    <!--absolute는 절대값 / 무조껀 좌표값이 들어가야함-->
+    <style>
+        .box1,
+        .box2 {
+            width: 200px;
+            height: 200px;
+            position: absolute; /* 절대 값이기 때문에 마지막 요소만 눈에 보임 (background컬러까지만 넣었을 때 */
+            left: 100px;
+            top: 100px;
+        }
+        .box1 {
+            background-color: maroon;
+        }
+        .box2 {
+            background-color: aquamarine;
+        }
+        .parent {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            position: relative; /* */
+            left: 200px;
+            top: 200px;
+        }
+        /* box1은 left 100과 top 100이 들어감
+        parent를 left200과 top200을 넣어서 상자가 잡힘 / box2는 parent를 기준으로 absolute값을 잡음
+        부모가 없을 때는 무조건 웹문서 자체가 부모가 됨 */
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="box1"></div>
+    <div class="parent">
+        <div class="box2"></div>
+    </div>
+
+
+
+</body></html>

@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* @charset부분을 굳이 안넣어도 되지만 넣는경우
+   ; 빠지지 않고 넣을 수 있도록 */
+
+/*RESET CSS*/
+/* 혹시라도 쓸수 있는 경우가 있기 때문에 ul,ol,li도 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: darksalmon;
+}
+
+/*MAIN CSS*/
+
+body {
+    background-image: url(images/bg.jpg);
+    color: white;
+}
+
+/* header에 100px이라고 높이를 줬기 때문에 section의 flaot의 영향을 안받음*/
+header {
+    width: 100%;
+    height: 100px;
+    background-image: url(images/bg-header.jpg);
+    position: fixed;
+    z-index: 999; 
+}
+
+.header_inner {
+    width: 960px;
+    background-color: lightseagreen;
+    margin: 0 auto;
+
+}
+
+.header_inner h1 {
+    float: left;
+    margin-left: 25px;
+}
+
+/* header_inner 안에 h1 안에 img 중에 첫번째*/
+.header_inner h1 img:first-child {
+    margin-bottom: 20px;
+}
+
+.header_inner nav {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+}
+
+.header_inner nav a {
+    color: white;
+}
+
+.header_inner nav a:hover {
+    color: cyan;
+    font-weight: bold;
+}
+
+section {
+    width: 960px;
+    margin: 0 auto;
+    background: url(images/bg-triangle.png) no-repeat;
+
+}
+
+/* 배경이미지는 내용이 잡힌 만큼 보임 */
+section .content1 {
+    background: url(images/triangles.png) no-repeat 123px 142px;
+    height: 550px;
+    position: relative; /*absolute로 잡을 때 기준이 되게 하기*/
+    
+}
+section .content1 h1 {
+    position: absolute;
+    top: 150px;
+    right: 180px;
+    font-size: 30px;
+}
+
+section .content1 .text-box {
+    width: 230px;
+    font-size: 13px;
+    position: absolute;
+   bottom: 20px;
+    right: 30px;
+}
+
+section .content1 .text-box p {
+    margin-bottom: 10px;
+}
+
+section .content1 .text-box p:first-child {
+    color: pink;
+    font-weight: bold;
+    font-size: 17px;
+}
+section .content1 .text-box p a {
+    color: darkorange;
+}
+section .content1 .text-box p a:hover {
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+}
+
+.content2 {
+    border-top: 1px solid #eee;
+}
+
+.content2 h2 {
+    font-size: 24px; 
+    padding: 10px 0 10px 8px;
+}
+
+.content2 .box {
+    width: 220px;
+    float: left;
+    margin: 0 10px; /* 0은 위아래 10px은 좌우 */
+}
+
+.content2 .box p {
+    font-size: 13px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.content2 .box p:last-child {
+    border-bottom: 0; /* none을 넣으면 공간까지 없애주는 의미 */
+}
+
+footer {
+    clear: both; /* float이 더이상 영향을 미치지 않도록 */
+    padding: 10px 0;
+    background-color: rgba(0,0,0,0.4);
+}
+
+footer p {
+    width: 960px;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 12px;
+}
+
+footer p a {
+    color: sienna;
+}
+
+footer p a:hover {
+    font-weight: bold;
+    color: red;
+}
+
+
+
+
