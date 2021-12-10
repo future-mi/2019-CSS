@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>box</title>
+
+    <style>
+        h1 {
+            color: lightcoral;
+        }
+
+        /*overflow*/
+        .div1 {
+            width: 200px;
+            height: 80px;
+            background-color: aquamarine;
+            margin-bottom: 20px;
+        }
+
+        /* margin-bottom 상자마다 마진을 20씩 넣어달라는 것 */
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+
+        .auto {
+            overflow: auto;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <h1>overflow:hidden, scroll, auto</h1>
+    <div class="div1 hidden">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+    <div class="div1 scroll">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+    <div class="div1 auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+
+    <h1>border-(width/style/color)</h1>
+    <p>border-width : top right bottom left;</p>
+    <p>border-style : top right bottom left;</p>
+    <p>border-color : top right bottom left;</p>
+
+    <p class="border">border</p>
+
+    <!--중간중간 스타일을 넣는건 일단 수업을 위해서-->
+    <!--border 첫자리는 width style color라고 보면됨-->
+
+    <h1>border-style</h1>
+    <p class="border2 solid">solid</p>
+    <p class="border2 dotted">dotted</p>
+    <p class="border2 dashed">dashed</p>
+    <p class="border2 double">double</p>
+    <p class="border2 ridge">ridge</p>
+    <p class="border2 groove">groove</p>
+    <p class="border2 inset">inset</p>
+    <p class="border2 outset">outset</p>
+
+
+
+    <style>
+        .border {
+            border: 3px solid lightblue;
+            border-width: 20px 10px 50px 8px;
+            border-style: dashed dotted solid double;
+            border-color: green red cyan orangered;
+        }
+
+        .border2 {
+            border: 4px lightgreen;
+        }
+
+        .solid {
+            border-style: solid;
+        }
+
+        .dotted {
+            border-style: dotted;
+        }
+
+        .dashed {
+            border-style: dashed;
+        }
+
+        .double {
+            border-style: double;
+        }
+
+        .ridge {
+            border-style: ridge;
+        }
+
+        .groove {
+            border-style: groove;
+        }
+
+        .inset {
+            border-style: inset;
+        }
+
+        .outset {
+            border-style: outset;
+        }
+
+        /* border의 스타일들 ridge랑 groove / inset과 outset */
+        /* .dorder2에서 중간에 스타일 빼도 반영됨 */
+
+    </style>
+    <h1>padding</h1>
+    <p class="bg padding1">padding : 50px; (네 방향 모두 50px)</p>
+    <p class="bg padding2">padding : 20px 40px; (위아래: 20px, 좌우:40px)</p>
+    <p class="bg padding3">padding : 20px 40px 10px; (위:20px, 좌우:40px, 아래:10px)</p>
+    <p class="bg padding4">padding : 20px 10px 30px 5px; (위/오른쪽/아래/왼쪽)</p>
+
+    <style>
+        .bg {
+            background-color: coral;
+            color: white;
+        }
+
+        .padding1 {
+            padding: 50px;
+        }
+
+        .padding2 {
+            padding: 20px 40px;
+        }
+
+        .padding3 {
+            padding: 20px 40px 10px;
+        }
+
+        .padding4 {
+            padding: 20px 10px 30px 5px;
+        }
+
+    </style>
+
+    <h1>margin</h1>
+    <h2 class="center">center</h2>
+    <p class="margin1">아날로그(Analog) 신디사이저는 종종 디지털(Digita) 신디사이저보다 '따뜻한' 소리가 난다고 한다.</p>
+    <p class="margin2">아날로그(Analog) 신디사이저는 종종 디지털(Digita) 신디사이저보다 '따뜻한' 소리가 난다고 한다.</p>
+    <p class="margin3">아날로그(Analog) 신디사이저는 종종 디지털(Digita) 신디사이저보다 '따뜻한' 소리가 난다고 한다.</p>
+
+    <style>
+        .center {
+            border-bottom: 2px solid gray;
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+            /* 0은 위아래 auto는 좌우 */
+
+        }
+
+        .margin1 {
+            width: 200px;
+            border: 1px solid blue;
+            padding: 10px;
+        }
+
+        .margin2 {
+            width: 200px;
+            border: 1px solid blue;
+            padding: 10px;
+            margin: 50px;
+        }
+
+        .margin3 {
+            width: 200px;
+            border: 1px solid blue;
+            padding: 10px;
+            margin: 0 auto;
+            /* 가장 자주 쓰는 마진값 */
+        }
+
+    </style>
+
+
+    <h1>box-sizing</h1>
+    <div class="div2">즐거운 수요일</div><br>
+    <div class="div2 padding">즐거운 수요일</div><br>
+    <div class="div2 padding sizing">즐거운 수요일</div>
+
+    <style>
+        .div2 {
+            width: 300px;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px solid #000;
+        }
+
+        .padding {
+            padding: 20px 30px;
+        }
+
+        .sizing {
+            box-sizing: border-box;
+        }
+
+        /* padding만 넣게되면 내가 정해놨던 크기보다 padding값이 들어가기 때문에 더 커짐
+        box-sizing을 추가하면 내가 정해놨던 사이즈 안에서 padding값이 들어가지기 때문에 사이즈 변형이 안됨 */
+
+    </style>
+
+
+    <h1>display:block, inline, inline-bolck, none</h1>
+    <a href="#">hyperlink</a>
+    <!--인라인블럭:요소를 인라인 레벨로 배치, 내용은 블록레벨 속성 적용-->
+    <ul class="inline-block">
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+    </ul>
+
+    <!--인라인요소-->
+    <ul class="inline">
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+        <li>menu</li>
+    </ul>
+    <!--인라인요소 태그-->
+    <h2 class="tag">inline요소 태그</h2>
+    <ul>
+        <li>img</li>
+        <li>span</li>
+        <li>input, textarea, buttom</li>
+        <li>label</li>
+        <li>a, sub, sup</li>
+        <li>br</li>
+    </ul>
+    <!--블럭요소 태그-->
+    <h2 class="tag">block요소 태그</h2>
+    <ul>
+        <li>div</li>
+        <li>hdeading(h1~h6)</li>
+        <li>ul li(ol li)</li>
+        <li>p</li>
+        <li>header, nav, section, article, footer, aside</li>
+        <li>form, fieldset</li>
+    </ul>
+    <!--display를 사용해서 인라인 요소를 블럭요소로도 바꿀 수 있음(요소를 바꾸는 태그)-->
+    <style>
+        .tag {
+            font-size: 20px;
+            font-style: bold;
+            color: red;
+        }
+
+    </style>
+    <!-- display:none-->
+    <h1>display:none;</h1>
+    <ul class="display">
+        <li>홈(home)</li>
+        <li>상품(Product)</li>
+        <li class="none">서비스(Service)</li>
+        <li>소개(About)</li>
+        <li>연락처(Contact</li>
+
+    </ul>
+
+
+
+    <style>
+        a {
+            background-color: yellow;
+            display: block;
+        }
+
+        .inline-block li {
+            background-color: lightgreen;
+            width: 200px;
+            height: 100px;
+            padding: 30px;
+            list-style: none;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        .inline li {
+            background-color: beige;
+            width: 200px;
+            height: 100px;
+            padding: 30px;
+            list-style: none;
+            margin: 20px;
+            display: inline;
+        }
+
+        .display {
+            list-style: none;
+            text-align: center;
+        }
+
+        .display li {
+            display: inline-block;
+            background-color: lightpink;
+            line-height: 100px;
+            padding: 10px;
+        }
+
+        .display .none {
+            /*display: none;*/
+            /* display에서 none을 쓰면 내용에서 사라짐 */
+            visibility: hidden;
+            /*visibility는 잠시 감춰둠(빈공간이 있음)*/
+        }
+
+        /* ul은 대표적인 블럭요소 
+        display에서 inline을 하게 되면 내가 정해놓은 높이나 마진값 등이 아무것도 반영되지 않음*/
+
+    </style>
+
+    <h1>box-shadow: x y blur color</h1>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            margin-bottom: 20px;
+            box-shadow: 5px 5px 5px #555;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            margin-bottom: 20px;
+            box-shadow: 10px 10px 0 #555;
+        }
+
+        /* blur의 숫자가 높아질 수록 번지는 정도가 넓어짐? */
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: darkgreen;
+            margin-bottom: 20px;
+            box-shadow: -5px -5px 10px #555;
+            /* -값이 들어가면 왼쪽과 위로 가는거라고 생각하면 됨 */
+        }
+
+    </style>
+
+</body>
+
+</html>
