@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>02_min-width</title>
+        
+        <!--뷰포트-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <style>
+            body {
+                margin-bottom: 600px;
+            }
+            
+            img {
+                width: 100%;
+            }
+            
+            @media all and (min-width:370px) {
+                img {
+                    width: 90%;
+                }
+            }
+            @media all and (min-width:768px) {
+                img {
+                    width: 50%;
+                    float: left;
+                }
+            }
+            
+            @media all and (min-width:1024px) {
+                img {
+                    width: 33.3%;
+                }
+                img:last-child {
+                    display: none;
+                }
+            }
+        
+        
+        
+        </style>
+    </head>
+    
+    <body>
+        <h1>Colorful Fruits</h1>
+        <img src="images/kiwi.jpg" alt="">
+        <img src="images/blueberry.jpg" alt="">
+        <img src="images/orange.jpg" alt="">
+        <img src="images/dragonfruit.jpg" alt="">
+        
+    </body>
+</html>
