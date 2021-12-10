@@ -1,0 +1,341 @@
+@charset 'utf-8';
+
+
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: purple;
+}
+
+
+/*HEADER*/
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(255,255,255);
+    border-bottom: 1px solid rgb(238,238,238);
+    z-index: 999999;
+}
+header .util_menu {
+    background-color: lightgray;
+    height: 40px;
+    line-height: 40px;
+}
+header .util_menu .inner_util {
+    width: 1200px;
+    /*background 영역 확인을 위한 CSS*/
+    /*background-color: yellow;
+    display: block;
+    overflow: hidden*/
+    margin: 0 auto;
+    font-size: 12px;
+}
+.util_menu .inner_util ul {
+    float: right;
+}
+.util_menu .inner_util ul li {
+    float: left;
+    margin-right: 20px;
+    letter-spacing: -1.6px;
+}
+.util_menu .inner_util ul li:last-child {   
+    width: 60px;
+    height: 40px;
+    text-indent: -9999px;
+    background: rgb(47,28,17) url(img/ico_user_info_line.png) no-repeat 50% 50%;
+    margin-right: 0;
+}
+.util_menu .inner_util ul li a {
+    color: black;
+}
+
+.inner_header {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+.logo {
+    width: 70px;
+    height: 100px;
+    float: left;
+    text-indent: -9999px;
+    background: url(img/logo.png) no-repeat 0 center;
+}
+
+nav {
+    float: left;
+    margin-left: 100px;
+    /*background-color: red;*/
+}
+
+nav ul li {
+    float: left;
+    padding: 0 30px;
+}
+
+nav ul li a {
+    display: block;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(47,28,17);
+    line-height: 100px;
+    letter-spacing: 0.025em;
+}
+nav ul li a:hover {
+    color: rgb(207,102,26);
+}
+
+#btnSearch {
+    float: right;
+}
+
+#btnSearch button {
+    width: 20px;
+    height: 100px;
+    display: block;
+    padding: 0;
+    text-indent: -9999px;
+    background: url(img/ico_search.png) no-repeat center center;
+    border: 0;
+}
+
+/****SECTION**************/
+section {
+    padding-top: 140px;
+}
+
+section .main {
+    width: 100%;
+    height: 500px;
+    background: url(img/main01.jpg) no-repeat center;
+}
+
+section .event {
+    width: 100%;
+    text-indent: -9999px;
+    height: 400px;
+    background: url(img/main_event.jpg) no-repeat center;
+}
+    
+
+section .md-pick {
+    width: 1200px;
+    margin: 60px auto;
+}
+
+
+section .md-pick h2 {
+    margin-bottom: 35px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: rgb(207,102,26);
+    text-align: center;
+}
+
+section .md-pick .md-wrap {
+    /*background-color: deepskyblue;*/
+    overflow: hidden;
+}
+
+.md-wrap .md-box {
+    width: 25%;
+    float: left;
+}
+
+.md-box .txt_box {
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+}
+.txt_box .name {
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    font-weight: 700;
+}
+.txt_box .num {
+    font-size: 14px;
+    letter-spacing: -1px;
+    line-height: 40px;
+}
+.txt_box .price {
+    font-size: 12px;
+    line-height: 30px;
+    color: rgb(207,102,26);
+    font-weight: 700;
+}
+
+
+section .new {
+    /*clear: both;*/
+    width: 1200px;
+    margin: 60px auto;
+    /*background-color: orange;*/
+    overflow: hidden;
+}
+section .new h2 {
+    margin-bottom: 35px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: rgb(207,102,26);
+    text-align: center;
+}
+
+section .new .box {
+    float: left;
+    margin-right: 30px;
+}
+section .new .box:last-child {
+    margin-right: 0;
+}
+section .new .box img {
+    width: 380px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+section .new .box p {
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    color: rgb(207,102,26);
+    font-weight: bold;
+}
+
+
+section .instagram {
+    clear: both;
+    width: 100%;
+    /*margin: 60px auto;*/
+    margin: 0 auto;
+    background-color:rgb(124,81,161); 
+    padding: 55px 0 40px;
+    text-align: center;
+}
+section .instagram h2 {
+    padding-bottom: 20px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: -1px;
+    
+}
+section .instagram .img-wrap {
+    width: 1200px;
+    background-color: yellow;
+    margin: 0 auto;
+}
+.instagram .img-wrap .img-box {
+    width: 200px;
+    float: left;
+} 
+.instagram .img-wrap .img-box img {
+    width: 100%;
+    float: left;
+}
+
+.instagram a {
+    display: inline-block;
+    width: 400px;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'Nanum Myeongjo';
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(255,255,255);
+    background: rgb(243,130,0);
+    margin-top: 40px;
+}
+
+/****footer**********/
+footer {
+    width: 100%;
+    background-color: lightgray;
+}
+
+.inner-footer {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.inner-footer .sitemap {
+    margin: 60px auto;
+    overflow: hidden;
+}
+.inner-footer .sitemap .mapbox {
+    width: 200px;
+    float: left;
+}
+.inner-footer .sitemap .mapbox h2 {
+    margin-bottom: 20px;
+    font-family: 'Nanum Myeongjo';
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(207,102,26);
+}
+.inner-footer .sitemap .mapbox ul {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.4px;
+}
+.inner-footer .sitemap .mapbox ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    clear: both;
+    padding: 30px 0;
+    border-top: 1px solid #000;
+}
+
+.footer-bottom .link {
+    width: 60%;
+    float: left;
+}
+.footer-bottom .link a {
+    font-size: 14px;
+    color: black;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.footer-bottom .link a:hover {
+    color: rgb(207,102,26);
+    font-weight: bold;
+}
+.footer-bottom .sns {
+    width: 30%;
+    float: right;
+    text-align: right;
+}
+.footer-bottom p {
+    clear: both;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

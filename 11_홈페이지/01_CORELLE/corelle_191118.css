@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/********Main*****************/
+
+body {
+    background-image: url(images/bg_body.png);
+        }
+
+.wrap {
+    width: 1200px;
+/*    background-color: cornflowerblue;*/
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden; /**/
+}
+
+header {
+    width: 210px;
+    height: 848px; /*section 이미지 높이값과 동일한 높이값 적용*/
+    background-size: 100% 100%; /*가로세로를 모두 100%로 보여달라는 내용*/
+    background-image: url(images/bg_head.jpg);
+    padding: 50px 40px 0 40px;
+    box-sizing: border-box; /*수치가 아니라 어디를 기준인지를 넣는 부분*/
+    float: left;
+}
+
+header h1 a, nav ul li a {
+    background-image: url(images/bg_gnb.png);
+    text-indent: -99999px;
+    display: block;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+nav ul li {
+    margin: 20px auto;
+    
+}
+
+nav ul li a {
+    padding: 10px 0;
+}
+
+/*nav 메뉴 위치조절*/
+nav ul li.history a {
+    background-position: -40px -40px;
+}
+
+nav ul li.history a:hover {
+    background-position: -250px -40px;
+}
+
+nav ul li.innovation a{
+    background-position: -40px -110px;
+}
+
+nav ul li.innovation a:hover{
+    background-position: -250px -110px;
+}
+
+nav ul li.new a {
+    background-position: -40px -183px;
+}
+nav ul li.new a:hover {
+    background-position: -250px -183px;
+}
+
+nav ul li.pattern a {
+    background-position: -40px -255px;
+}
+
+nav ul li.pattern a:hover {
+    background-position: -250px -255px;
+}
+
+nav ul li.event a {
+    background-position: -40px -315px;
+}
+
+nav ul li.event a:hover {
+    background-position: -250px -314px;
+}
+
+
+section {
+    width: 960px;
+    height: 848px;
+    background-image: url(images/bg_main.gif);
+    position: relative; /*앱솔루트 값의 기준은 relative임*/
+    float: right;
+}
+
+
+section a {
+    text-indent: -99999px;
+    display: block;
+    position: absolute;
+}
+
+section a.con_book {
+    width: 296px;
+    height: 320px;
+    background-image: url(images/img_main01.png);
+        transition: all 0.5s;
+}
+
+section a.con_book:hover {
+    width: 296px;
+    height: 320px;
+    background-image: url(images/img_main02.png);
+    background-position: right;
+}
+
+section a.con_history {
+    width: 295px;
+    height: 314px;
+    background-image: url(images/img_main01.png);
+    right: 0px;
+    top: 266px;
+    transition: all 0.5s;
+}
+
+section a.con_history:hover {
+    width: 295px;
+    height: 314px;
+    background-image: url(images/img_main02.png);
+    background-position: right;
+}
+
+section a.con_movie {
+    width: 296px;
+    height: 222px;
+    background-image: url(images/img_main03.png);
+    top: 506px;
+    transition: all 0.5s;
+}
+
+section a.con_movie:hover {
+    width: 296px;
+    height: 222px;
+    background-image: url(images/img_main03.png);
+    background-position: right;
+}
+
+section a.con_inno {
+    width: 369px;
+    height: 120px;
+    background-image: url(images/img_main04.png);
+    left: 296px;
+    top: 728px;
+    transition: all 0.5s;
+}
+
+section a.con_inno:hover {
+    width: 369px;
+    height: 120px;
+    background-image: url(images/img_main04.png);
+    background-position: right;
+}
+
+section a.con_event {
+    width: 160px;
+    height: 268px;
+    background-image: url(images/img_main05.png);
+    right: 135px;
+    bottom: 0;
+    /*top: 580px;*/
+    transition: all 0.5s;
+}
+
+section a.con_event:hover {
+    width: 160px;
+    height: 268px;
+    background-image: url(images/img_main05.png);
+    background-position: right;
+}
+
+
+footer {
+    clear: both;
+    position: absolute;
+    width: 150px;
+    text-indent: -9999px;
+    top: 660px;
+    left: 30px;
+}
+
+footer address {
+    background: url(images/bg_footer.png) no-repeat;
+    height: 76px;
+    margin-bottom: 20px;
+}
+
+footer .sns a {
+    width: 36px;
+    height: 36px;
+    background-image: url(images/bg_footer.png);
+    display: block;
+    float: left;
+}
+
+footer .sns a:first-child {
+    margin-right: 10px;
+    background-position: 0 36px;
+}
+
+footer .sns a:last-child {
+    background-position: -46px 36px;
+}
+

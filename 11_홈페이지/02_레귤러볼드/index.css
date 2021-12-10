@@ -1,0 +1,552 @@
+@charset "utf-8";
+
+/**********RESET************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*구글웹폰트 - 영문적용*/
+.eng {
+    font-family: 'PT Serif', serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/********HEADER****************/
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+header .logo {
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+header .logo img {
+    width: 70%;
+}
+
+nav {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 20%;
+    font-size: 20px;
+    font-family: 'PT Serif', serif;
+    /*이 부분만 바꾸고 싶으면 복붙해도 됨*/
+    padding-top: 2%;
+}
+
+nav ul li a {
+    color: crimson;
+}
+
+nav ul li a:hover {
+    color: #00c5b4;
+    border-bottom: 3px solid #00c5b4;
+    padding-bottom: 6px;
+    transition: all 0.5s;
+}
+
+nav .m-menu {
+    display: none;
+}
+
+header .sns {
+    width: 10%;
+    float: left;
+    text-align: center;
+}
+
+header .sns img {
+    padding-top: 10%;
+}
+
+/**************************HEADER 미디어쿼리*********************/
+@media all and (min-width:270px) and (max-width:430px)
+
+/*최소 270~430px에서는 내가 설정한 css 를 보여달라는 의미*/
+/*모바일은 370 기준으로 많이 함*/
+    {
+    header {
+        padding: 20px 0;
+    }
+
+    header .logo {
+        width: 50%;
+    }
+
+    header .logo img {
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav .m-menu {
+        display: block;
+        width: 30%;
+        float: right;
+    }
+
+    nav .m-menu img {
+        width: 60%;
+    }
+
+    .sns {
+        display: none;
+    }
+}
+
+
+/***************************SECTION**********************************/
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/******************************intro**************************/
+.intro {
+    width: 100%;
+    height: 550px;
+    background: url(images/rb_logo.png) no-repeat;
+    background-size: 550px;
+    background-position: right bottom;
+    /*pc버전에서만 보고 right를 주면  높이랑 배경이미지 사이즈가 같으니까 상관이없는데 모바일까지 확인하면 bottom을 넣어줘야 이미지가 아래로 내려옴*/
+    position: relative;
+}
+
+.left-box {
+    width: 34%;
+    position: absolute;
+    bottom: 40%;
+}
+
+.left-box .des-en {
+    color: lightgray;
+    font-size: 1.4em;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.left-box .des-ko {
+    font-size: 1.2em;
+}
+
+.btn {
+    position: absolute;
+    bottom: 20%;
+    border: 2px solid #e64461;
+    padding: 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    color: #e64461;
+}
+
+.btn:hover {
+    background-color: #e64461;
+    color: white;
+    font-weight: bold;
+}
+
+/**************************Intro 미디어쿼리*********************/
+@media all and (min-width:270px) and (max-width:430px) /*380으로했었음*/{
+    section {
+        width: 90%;
+    }
+
+    .intro {
+        background-size: contain;
+        height: 730px;
+    }
+
+    .left-box {
+        width: 90%;
+        top: 10%;
+    }
+
+    .left-box .des-en {
+        font-size: 1em;
+        line-height: 24px;
+    }
+
+    .left-box .des-ko {
+        font-size: 0.9em;
+        word-break: keep-all;
+        /*단어들의 중간에 줄바꿈이 일어나지 않는것*/
+    }
+
+    .btn {
+        bottom: 54%;
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+
+
+
+/******************************works*************************/
+.works {
+    margin-top: 80px;
+}
+
+.works .img-box {
+    /* 토탈 25%라고 보면됨 */
+    width: 23%;
+    padding: 1%;
+    float: left;
+}
+
+.works .img-box img {
+    width: 100%;
+}
+
+/**************************works 미디어쿼리*********************/
+@media all and (max-width:430px)
+
+/*min-width는 굳이 안써도됨*/
+    {
+    .works {
+        margin-top: 50px;
+    }
+
+    .works .img-box {
+        width: 46%;
+        padding: 2%;
+    }
+
+}
+
+
+/******************************about*************************/
+.about {
+    margin-top: 80px;
+    height: 400px;
+    background: url(images/people_01-1.png) no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    /*cover는 긴축을 기준 들어가고 전체로 들어감 / contain은 짧은 축을 기준으로 들어감*/
+    position: relative;
+}
+
+
+.about h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 100;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.about p {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+
+.btn-more {
+    border: 2px solid #00c5b4;
+    padding: 14px;
+    font-size: 14px;
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    margin-left: -30.117px;
+    color: #00c5b4;
+}
+
+.btn-more:hover {
+    background-color: #00c5b4;
+    color: white;
+    font-weight: bold;
+}
+
+/**************************about 미디어쿼리*********************/
+@media all and (max-width:430px) {
+    .about {
+        margin-top: 50px;
+        background-size: 200%;
+        background-position: 0 75%;
+    }
+    
+    .about h1 {
+        font-size: 25px;
+    }
+    
+    .about p {
+        width: 90%;
+        font-size: 16px;
+    }
+    
+    .btn-more {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+}
+
+/********************************news*****************/
+.news {
+    margin-top: 80px;
+}
+
+.news h1 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 20px;
+}
+
+.news p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.box {
+    width: 32%;
+    margin-right: 1%;
+    float: left;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box .title {
+    font-size: 14px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.box .date {
+    font-size: 13px;
+    color: darkgrey;
+}
+
+
+/**************************news 미디어쿼리*********************/
+@media all and (max-width:430px) {
+    .news {
+        margin-top: 50px;
+    }
+    
+    .news h1 {
+        text-align: center;
+    }
+    
+    .news p {
+        font-size: 16px;
+        word-break: keep-all;
+        width: 90%;
+        margin-left: 2%;
+    }
+    
+    .box {
+        width: 90%;
+        margin: 0 auto;
+        float: none; /*원본에서는 float처리되서 가운데로 간 것처럼 안보여서 none처리*/
+    }
+    
+    .box .title {
+        height: 30px;
+        
+    }
+    
+    .box .date {
+        margin-bottom: 30px;
+    }
+
+}
+
+/***************************CONTACT*******************/
+
+.contact {
+    width: 100%;
+    height: 500px;
+    background: url(images/rb-03.jpg) no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+    position: relative;
+}
+
+.contact h1 {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    padding-top: 80px;
+}
+
+.contact p {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    padding-top: 40px;
+}
+
+.btn-more2 {
+    text-align: center;
+    color: white;
+    border: 2px solid #fff;
+    padding: 14px;
+    font-size: 14px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    margin-left: -31.547px;
+    /*가운데 잡는방법*/
+}
+
+.btn-more2:hover {
+    background-color: black;
+    border: 2px solid #000;
+    font-weight: bold;
+}
+
+/**************************contact 미디어쿼리*********************/
+@media all and (max-width:430px) {
+    .contact {
+        margin-top: 50px;
+        height: 300px;
+    }
+    
+    
+    .contact h1 {
+        padding-top: 50px;
+        font-size: 2.6em;
+    }
+    
+    .contact p {
+        font-size: 16px;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 20px;
+        word-break: keep-all;
+    }
+    
+    .btn-more2 {
+        padding: 10px;
+        font-size: 14px;
+        top: 65%;
+        
+    }
+    
+}
+
+
+/*******footer**********/
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-box {
+    width: 33%;
+    float: left;
+    margin: 60px 0;
+}
+
+.footer-box h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-box p {
+    font-size: 14px;
+    color: darkgray;
+}
+
+.top {
+    position: absolute;
+    right: 0;
+    top: 90px;
+}
+
+
+/**************************footer미디어쿼리*********************/
+@media all and (max-width:430px) {
+    footer {
+        margin-bottom: 50px;
+    }
+    
+    .footer-box {
+        width: 90%;
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    
+    .footer-box .h2 {
+        margin-bottom: 10px;
+    }
+    
+    .top {
+        top: 200px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
