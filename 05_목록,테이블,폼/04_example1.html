@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>04_example</title>
+
+    <style>
+        body {
+            background-color: #eee;
+            color: #333;
+        }
+
+        h1 {
+            color: dimgray;
+        }
+
+        ul {
+            list-style-image: url(images/icon-plus.png);
+            margin-bottom: 30px;
+        }
+
+        ul li {
+            line-height: 30px;
+        }
+
+        /*tabel css*/
+        table {
+            width: 760px;
+            color: dimgrey;
+            /* border: 1px solid #000; */
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            letter-spacing: -1px;
+            border-right: 1px solid gray;
+            border-bottom: 1px solid gray;
+        }
+
+        /*align은 정렬*/
+        table th {
+            text-align: left;
+        }
+
+        table .title {
+            background-color: lightcoral;
+            color: white;
+            border-bottom: 3px groove
+                /*inset outset ridge 넣어도 됨*/
+                lightgray;
+        }
+
+        table .title th {
+            text-align: center;
+            letter-spacing: 2px;             /* 자간 */
+            border-color: lightgray;
+        }
+
+        table .title th:fist-child {
+            border-top-left-radius: 6px;
+
+        }
+
+        table .title th:last-child { /*위치선택자 접*/
+            border-top-right-radius: 6px;
+            border: 0;
+        }
+        
+       table .odd {
+           background-color: #e0ecf2; 
+        }
+        
+        table .even {
+            background-color: #c5dbe7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>시 워크샵(Poetry Workshops)</h1>
+    <p>1년 동안 다양한 시 워크샵과 심포지엄을 실시합니다.</p>
+    <p>다음과 같은 이벤트가 회원들에게 무료로 제공되오니 참고하여 주시기 바랍니다.</p>
+
+    <ul>
+        <li>A Poetic Perspective</li>
+        <li>Walt Whitman at War</li>
+        <li>Found Poems and Outsider Poetry</li>
+    </ul>
+
+    <table>
+        <!--col 은 셀의 갯수만큼-->
+        <colgroup>
+            <col width="31%">
+            <col width="23%">
+            <col width="23%">
+            <col width="23%">
+        </colgroup>
+        <tr class="title">
+            <th></th>
+            <th>뉴욕</th>
+            <th>시카고</th>
+            <th>샌프란시스코</th>
+        </tr>
+        <!--odd는 홀수 even은 짝수를 뜻하는 영어 약어-->
+        <tr class="odd">
+            <th>A Poetic Perspective</th>
+            <td>2012년 2월 4일(토)<br>오전 11시-오후2시</td>
+            <td>2012년 3월 3일(토)<br>오전 11시-오후2시</td>
+            <td>2012년 3월 17일(토)<br>오전 11시-오후2시</td>
+
+        </tr>
+
+        <tr class="even">
+            <th>Walt Whitman at War</th>
+            <td>2012년 3월 3일(토)<br>오전 11시-오후1시</td>
+            <td>2012년 5월 5일(토)<br>오전 11시-오후1시</td>
+            <td>2012년 5월 19일(토)<br>오전 11시-오후1시</td>
+
+        </tr>
+
+        <tr class="odd">
+            <th>Found Poems &amp; Outsider Poetry</th>
+            <td>2012년 6월 9일(토)<br>오전 11시-오후2시</td>
+            <td>2012년 7월 7일(토)<br>오전 11시-오후2시</td>
+            <td>2012년 7월 21일(토)<br>오전 11시-오후2시</td>
+
+        </tr>
+        <tr class="even">
+            <th>Natural Death: An Exploration</th>
+            <td>2012년 8월 4일(토)<br>오전 11시-오후4시</td>
+            <td>2012년 9월 8일(토)<br>오전 11시-오후4시</td>
+            <td>2012년 9월 15일(토)<br>오전 11시-오후4시</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+</body></html>

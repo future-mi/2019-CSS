@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>03_form</title>
+
+    <style>
+        /* input:search1*/
+        /* repeat 반복여부 / outline을 0으로 두면 클릭해서 글씨를 넣을 때 칸이 안생김 */
+        .search1 input {
+            background-image: url(images/search.png);
+            background-repeat: no-repeat;
+            padding: 5px 0 5px 20px;
+            background-position: left center;
+            border: 0;
+            border-bottom: 1px solid #777;
+            outline: 0;
+        }
+
+        .search2 input {
+            background-image: url(images/search.png);
+            background-repeat: no-repeat;
+            padding: 5px 0;
+            background-position: right center;
+            border: 1px solid #777;
+            border-radius: 20px;
+            outline: 0px;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!--input:search1   -->
+    <p class="search1">
+        <input type="text">
+
+    </p>
+    <!--input:search2-->
+    <p class="search2">
+        <input type="text">
+    </p>
+
+    <!--curcor-->
+    <!--마우스 커서를 가져다가 댔을 때 의 모양-->
+    <p class="crosshair">crosshair</p>
+    <p class="default">default</p>
+    <p class="help">help</p>
+    <p class="move">move</p>
+    <p class="pointer">pointer</p>
+    <p class="progress">progress</p>
+    <p class="wait">wait</p>
+    <p class="text">text</p>
+    
+    <style>
+        .crosshiar {
+            cursor: crosshair;
+        }
+
+        .default {
+            cursor: default;
+        }
+
+        .help {
+            cursor: help;
+        }
+
+        .move {
+            cursor: move;
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+
+        .progress {
+            cursor: progress;
+        }
+
+        .wait {
+            cursor: wait;
+        }
+
+        .text {
+            cursor: text;
+        }
+    </style>
+
+</body></html>
